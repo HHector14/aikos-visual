@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
-    {/*proyecto limpio*/}
-    </>
+    <div>
+      <h1 className="text-3xl font-bold underline">El comienzo del desarrollo de Oikos Aikos!</h1>
+    </div>
   );
 }
