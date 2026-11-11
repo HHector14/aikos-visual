@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface UniverseCardProps {
     title: string;
@@ -19,7 +20,7 @@ const colorMap: Record<string, string> = {
 
 export default function UniverseCard({title, subtitle, imageSrc, number, colorScheme}:UniverseCardProps){
     return(
-        <div className="relative h-96 w-60 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+        <Link href="/universes/1" className="relative h-96 w-60 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
             {/* Imagen de fondo*/}
             <Image
              src={imageSrc}
@@ -43,6 +44,6 @@ export default function UniverseCard({title, subtitle, imageSrc, number, colorSc
                 </div>
 
             </div>
-        </div>
+        </Link>
     )
 }
